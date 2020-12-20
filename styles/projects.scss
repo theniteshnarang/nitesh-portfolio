@@ -1,0 +1,25 @@
+.hero {
+  &__wrapper {
+    padding: 1rem 0;
+    height: 25vh;
+  }
+}
+
+.main {
+  &__wrapper {
+    height: 450vh;
+    &__light {
+      height: 25vh;
+      &__center {
+          margin: 4rem auto;
+        h3{
+          text-align: justify;
+        }
+        span{
+            display: flex;
+            justify-content: flex-start;
+        }
+      }
+    }
+  }
+}

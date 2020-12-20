@@ -1,0 +1,30 @@
+.hero__wrapper {
+  padding: 1rem 0;
+  height: 25vh;
+}
+
+.main__wrapper {
+  height: 450vh;
+}
+
+.main__wrapper__light {
+  height: 25vh;
+}
+
+.main__wrapper__light__center {
+  margin: 4rem auto;
+}
+
+.main__wrapper__light__center h3 {
+  text-align: justify;
+}
+
+.main__wrapper__light__center span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/*# sourceMappingURL=projects.css.map */

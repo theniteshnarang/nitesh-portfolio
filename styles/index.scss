@@ -1,0 +1,154 @@
+// colors
+$darkColor: #edc988;
+$primaryColor: #132743;
+$secondaryColor: #d7385e;
+$lightColor: #f8efd4;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  color: $primaryColor;
+  
+  scroll-behavior: smooth;
+  text-decoration: none;
+  text-align: center;
+}
+
+body{
+    background-color: $lightColor;
+}
+
+.button {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block;
+  max-width: 8rem;
+  margin: 1rem 0;
+}
+
+.button-primary {
+  background-color: $primaryColor;
+  &:hover{
+      color: $secondaryColor;
+  }
+}
+
+.button-secondary {
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  &:hover{
+      background-color: $secondaryColor;
+  }
+}
+
+.navbar {
+  background-color: $primaryColor;
+  padding: 0.2rem 0;
+  border-bottom-left-radius: 1.5rem;
+
+  &__wrapper {
+    display: flex;
+    height: 10vh;
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__brandName {
+      margin-left: 2rem;
+      color: $darkColor;
+    }
+
+    &__container {
+      display: flex;
+      list-style-type: none;
+      li {
+        margin: 0 2rem;
+        a {
+          color: $darkColor;
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  &__wrapper {
+    padding: 4rem;
+    
+    img {
+      width: 40vw;
+    }
+
+    &__heading {
+      margin: 3rem;
+      font-size: 2rem;
+      color: $primaryColor;
+      strong {
+        font-size: 3rem;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+.main {
+  &__wrapper {
+    &__dark, &__light {
+      padding: 2rem 0;
+      height: 35vh;
+      h3 {
+        font-size: 2rem;
+        margin: 1rem 0;
+      }
+      &__center {
+        max-width: 50vw;
+        margin: 0 auto;
+        p {
+          text-align: justify;
+          margin: 1rem 0;
+        }
+      }
+    }
+    &__dark{
+        height: 40vh;
+        background-color: $darkColor;
+    }
+  }
+}
+
+.footer {
+  &__wrapper {
+    background-color: $primaryColor;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3{
+        color: $lightColor;
+        margin: 1rem 0;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        color: $darkColor;
+        li{
+            margin: 0 2rem;
+            a{
+                color: $darkColor;
+                &:hover{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+  }
+}
