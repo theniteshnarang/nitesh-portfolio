@@ -4,7 +4,7 @@
 }
 
 .main__wrapper {
-  height: 450vh;
+  height: 440vh;
 }
 
 .main__wrapper__light {
@@ -13,6 +13,12 @@
 
 .main__wrapper__light__center {
   margin: 4rem auto;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.main__wrapper__light__center h3, .main__wrapper__light__center span, .main__wrapper__light__center p, .main__wrapper__light__center a {
+  font-weight: normal;
 }
 
 .main__wrapper__light__center h3 {

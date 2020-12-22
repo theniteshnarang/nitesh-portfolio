@@ -1,74 +1,111 @@
+// Fonts import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 // colors
 $darkColor: #edc988;
 $primaryColor: #132743;
 $secondaryColor: #d7385e;
 $lightColor: #f8efd4;
 
+// sizes
+$tablet: 768px;
+$phone: 510px;
+$smphone: 300px;
+
+// media queries defination in scss.
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+      @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (max-width: $phone) {
+      @content;
+  }
+}
+
+@mixin smphone {
+  @media only screen and (max-width: $smphone) {
+      @content;
+  }
+}
+
 // Global styles
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
-  color: $primaryColor;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    color: $primaryColor;
+    
+    scroll-behavior: smooth;
+    text-align: center;
+  }
   
-  scroll-behavior: smooth;
-  text-decoration: none;
-  text-align: center;
-}
-
-body{
-    background-color: $lightColor;
-}
-
-.button {
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  display: block;
-  max-width: 8rem;
-  margin: 1rem 0;
-}
-
-.button-primary {
-  background-color: $primaryColor;
-  &:hover{
+  body{
+      background-color: $lightColor;
+  }
+  
+  .button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: block;
+    max-width: 9rem;
+    margin: 1rem 0;
+  }
+  
+  .button-primary {
+    background-color: $primaryColor;
+    &:hover{
+        color: $secondaryColor;
+    }
+    &:focus{
       color: $secondaryColor;
+    }
   }
-}
-
-.button-secondary {
-  color: $primaryColor;
-  border: 1px solid $primaryColor;
-  &:hover{
+  
+  .button-secondary {
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    &:hover{
       background-color: $secondaryColor;
+    }
   }
+
+.active{
+  font-weight: bold;
 }
 
 .navbar {
   background-color: $primaryColor;
-  padding: 0.2rem 0;
+  padding: 1rem 0;
   border-bottom-left-radius: 1.5rem;
 
   &__wrapper {
     display: flex;
-    height: 10vh;
-    width: 70vw;
+    height: 8vh;
+    max-width: 70vw;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 
     &__brandName {
-      margin-left: 2rem;
       color: $darkColor;
+      font-weight: bold;
+      transform: translateY(-15px);
     }
 
     &__container {
       display: flex;
       list-style-type: none;
+      transform: translateY(20px);
       li {
         margin: 0 2rem;
+
         a {
           color: $darkColor;
           &:hover {
@@ -82,14 +119,14 @@ body{
 
 .hero {
   &__wrapper {
-    padding: 4rem;
+    padding: 4rem 0;
     
     img {
-      width: 40vw;
+      width: 35vw;
     }
 
     &__heading {
-      margin: 3rem;
+      margin: 3rem 0;
       font-size: 2rem;
       color: $primaryColor;
       strong {
@@ -103,23 +140,23 @@ body{
 .main {
   &__wrapper {
     &__dark, &__light {
-      padding: 2rem 0;
-      height: 35vh;
+      padding: 1.5rem 0;
+      height: 37vh;
       h3 {
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: 0 0 1rem 0;
       }
       &__center {
         max-width: 50vw;
         margin: 0 auto;
         p {
           text-align: justify;
-          margin: 1rem 0;
+          padding: 0.5rem 0 0 0;
         }
       }
     }
     &__dark{
-        height: 40vh;
+        height: 35vh;
         background-color: $darkColor;
     }
   }

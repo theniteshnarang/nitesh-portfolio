@@ -7,17 +7,22 @@
 
 .main {
   &__wrapper {
-    height: 450vh;
+    height: 440vh;
     &__light {
       height: 25vh;
       &__center {
-          margin: 4rem auto;
+        margin: 4rem auto;
+        font-weight: bold;
+        font-size: 2rem;
+        h3, span, p, a{
+          font-weight: normal;
+        }
         h3{
           text-align: justify;
         }
         span{
-            display: flex;
-            justify-content: flex-start;
+          display: flex;
+          justify-content: flex-start;
         }
       }
     }

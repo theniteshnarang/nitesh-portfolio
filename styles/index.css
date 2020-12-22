@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,6 @@
   font-family: "Montserrat", sans-serif;
   color: #132743;
   scroll-behavior: smooth;
-  text-decoration: none;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   display: block;
-  max-width: 8rem;
+  max-width: 9rem;
   margin: 1rem 0;
 }
 
@@ -29,6 +29,10 @@ body {
 }
 
 .button-primary:hover {
+  color: #d7385e;
+}
+
+.button-primary:focus {
   color: #d7385e;
 }
 
@@ -41,9 +45,13 @@ body {
   background-color: #d7385e;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .navbar {
   background-color: #132743;
-  padding: 0.2rem 0;
+  padding: 1rem 0;
   border-bottom-left-radius: 1.5rem;
 }
 
@@ -51,8 +59,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 15vh;
-  width: 70vw;
+  height: 8vh;
+  max-width: 70vw;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -63,8 +71,10 @@ body {
 }
 
 .navbar__wrapper__brandName {
-  margin-left: 2rem;
   color: #edc988;
+  font-weight: bold;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .navbar__wrapper__container {
@@ -72,6 +82,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .navbar__wrapper__container li {
@@ -87,15 +99,15 @@ body {
 }
 
 .hero__wrapper {
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 .hero__wrapper img {
-  width: 40vw;
+  width: 35vw;
 }
 
 .hero__wrapper__heading {
-  margin: 3rem;
+  margin: 3rem 0;
   font-size: 2rem;
   color: #132743;
 }
@@ -106,13 +118,13 @@ body {
 }
 
 .main__wrapper__dark, .main__wrapper__light {
-  padding: 2rem 0;
-  height: 35vh;
+  padding: 1.5rem 0;
+  height: 37vh;
 }
 
 .main__wrapper__dark h3, .main__wrapper__light h3 {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .main__wrapper__dark__center, .main__wrapper__light__center {
@@ -122,11 +134,11 @@ body {
 
 .main__wrapper__dark__center p, .main__wrapper__light__center p {
   text-align: justify;
-  margin: 1rem 0;
+  padding: 0.5rem 0 0 0;
 }
 
 .main__wrapper__dark {
-  height: 40vh;
+  height: 35vh;
   background-color: #edc988;
 }
 
