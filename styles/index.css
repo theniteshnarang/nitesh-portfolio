@@ -73,8 +73,8 @@ body {
 .navbar__wrapper__brandName {
   color: #edc988;
   font-weight: bold;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .navbar__wrapper__container {
@@ -106,10 +106,28 @@ body {
   width: 35vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__wrapper img {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero__wrapper img {
+    width: 80vw;
+  }
+}
+
 .hero__wrapper__heading {
-  margin: 3rem 0;
+  margin: 2rem 0;
   font-size: 2rem;
   color: #132743;
+}
+
+@media only screen and (max-width: 510px) {
+  .hero__wrapper__heading {
+    font-size: 1.5rem;
+  }
 }
 
 .hero__wrapper__heading strong {
@@ -117,9 +135,27 @@ body {
   color: #d7385e;
 }
 
+@media only screen and (max-width: 510px) {
+  .hero__wrapper__heading strong {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero__wrapper__heading strong {
+    font-size: 1.5rem;
+  }
+}
+
 .main__wrapper__dark, .main__wrapper__light {
   padding: 1.5rem 0;
   height: 37vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .main__wrapper__dark, .main__wrapper__light {
+    height: 40vh;
+  }
 }
 
 .main__wrapper__dark h3, .main__wrapper__light h3 {
@@ -137,9 +173,39 @@ body {
   padding: 0.5rem 0 0 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .main__wrapper__dark__center, .main__wrapper__light__center {
+    max-width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper__dark__center, .main__wrapper__light__center {
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main__wrapper__dark__center, .main__wrapper__light__center {
+    font-size: 0.8rem;
+  }
+}
+
 .main__wrapper__dark {
   height: 35vh;
   background-color: #edc988;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__wrapper__dark {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main__wrapper__dark {
+    height: 45vh;
+  }
 }
 
 .footer__wrapper {
@@ -172,8 +238,23 @@ body {
   color: #edc988;
 }
 
+@media only screen and (max-width: 400px) {
+  .footer__wrapper__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__wrapper__list li {
   margin: 0 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__wrapper__list li {
+    margin: 0.5rem;
+  }
 }
 
 .footer__wrapper__list li a {

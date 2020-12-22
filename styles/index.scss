@@ -10,7 +10,7 @@ $lightColor: #f8efd4;
 // sizes
 $tablet: 768px;
 $phone: 510px;
-$smphone: 300px;
+$smphone: 400px;
 
 // media queries defination in scss.
 
@@ -96,7 +96,7 @@ $smphone: 300px;
     &__brandName {
       color: $darkColor;
       font-weight: bold;
-      transform: translateY(-15px);
+      transform: translateY(-20px);
     }
 
     &__container {
@@ -123,15 +123,30 @@ $smphone: 300px;
     
     img {
       width: 35vw;
+      @include tablet{
+        width: 60vw;
+      }
+      @include smphone{
+        width: 80vw;
+      }
     }
 
     &__heading {
-      margin: 3rem 0;
+      margin: 2rem 0;
       font-size: 2rem;
       color: $primaryColor;
+      @include phone{
+        font-size: 1.5rem;
+      }
       strong {
         font-size: 3rem;
         color: $secondaryColor;
+        @include phone{
+          font-size: 2rem;
+        }
+        @include smphone{
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -142,6 +157,10 @@ $smphone: 300px;
     &__dark, &__light {
       padding: 1.5rem 0;
       height: 37vh;
+      @include smphone{
+        height: 40vh;
+      }
+
       h3 {
         font-size: 2rem;
         margin: 0 0 1rem 0;
@@ -153,11 +172,28 @@ $smphone: 300px;
           text-align: justify;
           padding: 0.5rem 0 0 0;
         }
+
+        @include tablet{
+            max-width: 70vw;
+        }
+
+        @include phone{
+          max-width: 90vw;
+        }
+        @include smphone{
+          font-size: 0.8rem;
+        }
       }
     }
     &__dark{
         height: 35vh;
         background-color: $darkColor;
+        @include tablet{
+          height: 40vh;
+        }
+        @include smphone{
+          height: 45vh;
+        }
     }
   }
 }
@@ -177,8 +213,14 @@ $smphone: 300px;
         display: flex;
         justify-content: center;
         color: $darkColor;
+        @include smphone{
+          flex-direction: column;
+        }
         li{
             margin: 0 2rem;
+            @include smphone{
+              margin: 0.5rem;
+            }
             a{
                 color: $darkColor;
                 &:hover{

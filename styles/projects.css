@@ -3,8 +3,32 @@
   height: 25vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__wrapper__heading {
+    margin: 0;
+  }
+}
+
 .main__wrapper {
   height: 440vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__wrapper {
+    height: 470vh;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper {
+    height: 480vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main__wrapper {
+    height: 520vh;
+  }
 }
 
 .main__wrapper__light {
@@ -15,6 +39,19 @@
   margin: 4rem auto;
   font-weight: bold;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__wrapper__light__center {
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper__light__center {
+    max-width: 90vw;
+    font-size: 1rem;
+  }
 }
 
 .main__wrapper__light__center h3, .main__wrapper__light__center span, .main__wrapper__light__center p, .main__wrapper__light__center a {
