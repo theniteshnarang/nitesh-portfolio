@@ -3,7 +3,6 @@
 .hero {
   &__wrapper {
     padding: 2rem 0 0 0;
-    height: 25vh;
     @include tablet{
       height: 10vh;
     }
@@ -12,6 +11,7 @@
     }
     &__heading{
       margin: 0;
+
     }
   }
 }
@@ -24,7 +24,7 @@
       height: 460vh;
     }
     @include vsmphone{
-      height: 480vh;
+      height: 400vh;
     }
 
     &__light {

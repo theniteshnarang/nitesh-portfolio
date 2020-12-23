@@ -1,6 +1,5 @@
 .hero__wrapper {
   padding: 2rem 0 0 0;
-  height: 25vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -27,9 +26,9 @@
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
   .main__wrapper {
-    height: 480vh;
+    height: 400vh;
   }
 }
 
