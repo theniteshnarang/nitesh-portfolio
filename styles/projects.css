@@ -21,13 +21,13 @@
   height: 440vh;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 460px) {
   .main__wrapper {
     height: 460vh;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
   .main__wrapper {
     height: 480vh;
   }

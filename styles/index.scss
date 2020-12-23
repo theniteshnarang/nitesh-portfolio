@@ -10,7 +10,7 @@
     font-size: 1.1rem;
     font-family: "Montserrat", sans-serif;
     color: $primaryColor;
-    
+    text-decoration: none;
     scroll-behavior: smooth;
     text-align: center;
   }
@@ -99,6 +99,7 @@
         }
 
         a {
+          text-decoration: none;
           color: $darkColor;
           @include phone{
             font-size: 0.8rem;

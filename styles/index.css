@@ -7,6 +7,7 @@
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   color: #132743;
+  text-decoration: none;
   scroll-behavior: smooth;
   text-align: center;
 }
@@ -83,7 +84,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .navbar__wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -106,7 +107,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .navbar__wrapper__brandName {
     -webkit-transform: translate(30px, -35px);
             transform: translate(30px, -35px);
@@ -122,7 +123,7 @@ body {
           transform: translateY(20px);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .navbar__wrapper__container {
     -webkit-transform: translate(-5px, 25px);
             transform: translate(-5px, 25px);
@@ -140,6 +141,7 @@ body {
 }
 
 .navbar__wrapper__container li a {
+  text-decoration: none;
   color: #edc988;
 }
 
@@ -167,7 +169,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .hero__wrapper img {
     width: 80vw;
   }
@@ -201,7 +203,7 @@ body {
   height: 37vh;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .main__wrapper__dark, .main__wrapper__light {
     height: 40vh;
   }
@@ -234,7 +236,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .main__wrapper__dark__center, .main__wrapper__light__center {
     font-size: 0.8rem;
   }
@@ -251,7 +253,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .main__wrapper__dark {
     height: 45vh;
   }
@@ -287,7 +289,7 @@ body {
   color: #edc988;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .footer__wrapper__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -300,7 +302,7 @@ body {
   margin: 0 2rem;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   .footer__wrapper__list li {
     margin: 0.5rem;
   }
