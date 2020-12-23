@@ -5,5 +5,10 @@
         @include phone{
             height: 140vh;
         }
+        &__light__center{
+            @include phone{
+                margin: 2rem 0.5rem 0 2rem;
+            }
+        }
     }
 }

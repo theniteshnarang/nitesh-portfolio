@@ -51,7 +51,7 @@ body {
 
 .navbar {
   background-color: #132743;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom-left-radius: 1.5rem;
 }
 
@@ -70,11 +70,47 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar__wrapper {
+    max-width: 95vw;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .navbar__wrapper {
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .navbar__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .navbar__wrapper__brandName {
   color: #edc988;
   font-weight: bold;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+
+@media only screen and (max-width: 510px) {
+  .navbar__wrapper__brandName {
+    font-size: 0.8rem;
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .navbar__wrapper__brandName {
+    -webkit-transform: translate(30px, -35px);
+            transform: translate(30px, -35px);
+  }
 }
 
 .navbar__wrapper__container {
@@ -86,12 +122,31 @@ body {
           transform: translateY(20px);
 }
 
+@media only screen and (max-width: 420px) {
+  .navbar__wrapper__container {
+    -webkit-transform: translate(-5px, 25px);
+            transform: translate(-5px, 25px);
+  }
+}
+
 .navbar__wrapper__container li {
   margin: 0 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar__wrapper__container li {
+    margin: 0 1rem;
+  }
+}
+
 .navbar__wrapper__container li a {
   color: #edc988;
+}
+
+@media only screen and (max-width: 510px) {
+  .navbar__wrapper__container li a {
+    font-size: 0.8rem;
+  }
 }
 
 .navbar__wrapper__container li a:hover {

@@ -7,4 +7,10 @@
     height: 140vh;
   }
 }
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper__light__center {
+    margin: 2rem 0.5rem 0 2rem;
+  }
+}
 /*# sourceMappingURL=blogs.css.map */

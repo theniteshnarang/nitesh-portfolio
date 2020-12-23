@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 420px) {
   .main__wrapper {
-    height: 490vh;
+    height: 400vh;
   }
 }
 

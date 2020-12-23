@@ -52,7 +52,7 @@
 
 .navbar {
   background-color: $primaryColor;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom-left-radius: 1.5rem;
 
   &__wrapper {
@@ -62,22 +62,48 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-
+    @include tablet{
+      max-width: 95vw;
+      margin: 0 1rem;
+    }
+    @include phone{
+      height: 10vh;
+    }
+    @include smphone{
+      justify-content: center;
+    }
     &__brandName {
       color: $darkColor;
       font-weight: bold;
       transform: translateY(-20px);
+      @include phone{
+        font-size: 0.8rem;
+        transform: translate(0,-30px);
+      }
+      @include smphone{
+        transform: translate(30px,-35px);
+      }
     }
 
     &__container {
       display: flex;
       list-style-type: none;
       transform: translateY(20px);
+      @include smphone{
+        transform: translate(-5px, 25px);
+      }
       li {
         margin: 0 2rem;
+        @include tablet{
+          margin: 0 1rem;
+        }
 
         a {
           color: $darkColor;
+          @include phone{
+            font-size: 0.8rem;
+          }
+          
           &:hover {
             color: $secondaryColor;
           }
