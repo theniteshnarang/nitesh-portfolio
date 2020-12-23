@@ -1,5 +1,9 @@
+@import './mixin.scss';
 .main{
     &__wrapper{
         height: 170vh;
+        @include phone{
+            height: 140vh;
+        }
     }
 }

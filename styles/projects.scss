@@ -1,32 +1,17 @@
-$tablet: 768px;
-$phone: 510px;
-$smphone: 400px;
-@mixin tablet {
-  @media only screen and (max-width: $tablet) {
-      @content;
-  }
-}
-
-@mixin phone {
-  @media only screen and (max-width: $phone) {
-      @content;
-  }
-}
-
-@mixin smphone {
-  @media only screen and (max-width: $smphone) {
-      @content;
-  }
-}
+@import './mixin.scss';
 
 .hero {
   &__wrapper {
-    padding: 1rem 0;
+    padding: 2rem 0 0 0;
     height: 25vh;
+    @include tablet{
+      height: 10vh;
+    }
+    img{
+      display: none;
+    }
     &__heading{
-      @include tablet{
-        margin: 0;
-      }
+      margin: 0;
     }
   }
 }
@@ -34,34 +19,34 @@ $smphone: 400px;
 .main {
   &__wrapper {
     height: 440vh;
-    @include tablet{
-      height: 470vh;
-    }
-    @include phone{
-      height: 480vh;
-    }
+
     @include smphone{
-      height: 520vh;
+      height: 490vh;
     }
 
     &__light {
       height: 25vh;
+     
+      @include phone{
+        padding: 1rem 0;
+      }
       &__center {
         margin: 4rem auto;
         font-weight: bold;
         font-size: 2rem;
         @include tablet{
           max-width: 80vw;
+          margin: 4rem auto 4rem 4rem;
         }
         @include phone{
           max-width: 90vw;
-          font-size: 1rem;
+          margin: 2rem 0.5rem 0 3rem;
         }
         h3, span, p, a{
           font-weight: normal;
         }
         h3{
-          text-align: justify;
+          text-align: left;
         }
         span{
           display: flex;

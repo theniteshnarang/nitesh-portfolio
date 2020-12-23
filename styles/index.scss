@@ -1,36 +1,6 @@
 // Fonts import
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
-// colors
-$darkColor: #edc988;
-$primaryColor: #132743;
-$secondaryColor: #d7385e;
-$lightColor: #f8efd4;
-
-// sizes
-$tablet: 768px;
-$phone: 510px;
-$smphone: 400px;
-
-// media queries defination in scss.
-
-@mixin tablet {
-  @media only screen and (max-width: $tablet) {
-      @content;
-  }
-}
-
-@mixin phone {
-  @media only screen and (max-width: $phone) {
-      @content;
-  }
-}
-
-@mixin smphone {
-  @media only screen and (max-width: $smphone) {
-      @content;
-  }
-}
+@import './mixin.scss';
 
 // Global styles
 * {
@@ -144,9 +114,6 @@ $smphone: 400px;
         @include phone{
           font-size: 2rem;
         }
-        @include smphone{
-          font-size: 1.5rem;
-        }
       }
     }
   }
@@ -169,7 +136,7 @@ $smphone: 400px;
         max-width: 50vw;
         margin: 0 auto;
         p {
-          text-align: justify;
+          text-align: left;
           padding: 0.5rem 0 0 0;
         }
 
@@ -178,9 +145,9 @@ $smphone: 400px;
         }
 
         @include phone{
-          max-width: 90vw;
+          max-width: 80vw;
         }
-        @include smphone{
+        @include smphone{ 
           font-size: 0.8rem;
         }
       }

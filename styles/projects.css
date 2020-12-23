@@ -1,38 +1,40 @@
 .hero__wrapper {
-  padding: 1rem 0;
+  padding: 2rem 0 0 0;
   height: 25vh;
 }
 
 @media only screen and (max-width: 768px) {
-  .hero__wrapper__heading {
-    margin: 0;
+  .hero__wrapper {
+    height: 10vh;
   }
+}
+
+.hero__wrapper img {
+  display: none;
+}
+
+.hero__wrapper__heading {
+  margin: 0;
 }
 
 .main__wrapper {
   height: 440vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 420px) {
   .main__wrapper {
-    height: 470vh;
-  }
-}
-
-@media only screen and (max-width: 510px) {
-  .main__wrapper {
-    height: 480vh;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .main__wrapper {
-    height: 520vh;
+    height: 490vh;
   }
 }
 
 .main__wrapper__light {
   height: 25vh;
+}
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper__light {
+    padding: 1rem 0;
+  }
 }
 
 .main__wrapper__light__center {
@@ -44,13 +46,14 @@
 @media only screen and (max-width: 768px) {
   .main__wrapper__light__center {
     max-width: 80vw;
+    margin: 4rem auto 4rem 4rem;
   }
 }
 
 @media only screen and (max-width: 510px) {
   .main__wrapper__light__center {
     max-width: 90vw;
-    font-size: 1rem;
+    margin: 2rem 0.5rem 0 3rem;
   }
 }
 
@@ -59,7 +62,7 @@
 }
 
 .main__wrapper__light__center h3 {
-  text-align: justify;
+  text-align: left;
 }
 
 .main__wrapper__light__center span {

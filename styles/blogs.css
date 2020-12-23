@@ -1,4 +1,10 @@
 .main__wrapper {
   height: 170vh;
 }
+
+@media only screen and (max-width: 510px) {
+  .main__wrapper {
+    height: 140vh;
+  }
+}
 /*# sourceMappingURL=blogs.css.map */
