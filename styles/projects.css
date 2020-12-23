@@ -26,9 +26,9 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 390px) {
   .main__wrapper {
-    height: 400vh;
+    height: 480vh;
   }
 }
 
