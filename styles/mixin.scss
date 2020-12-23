@@ -7,7 +7,8 @@ $lightColor: #f8efd4;
 // sizes
 $tablet: 768px;
 $phone: 510px;
-$smphone: 420px;
+$smphone: 460px;
+$vsmphone: 390px;
 
 // media queries defination in scss.
 
@@ -28,3 +29,9 @@ $smphone: 420px;
       @content;
   }
 }
+
+@mixin vsmphone {
+    @media only screen and (max-width: $vsmphone) {
+        @content;
+    }
+  }
