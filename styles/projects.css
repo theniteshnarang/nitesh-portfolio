@@ -17,18 +17,24 @@
 }
 
 .main__wrapper {
-  height: 440vh;
+  height: 485vh;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .main__wrapper {
-    height: 460vh;
+    height: 495vh;
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 425px) {
   .main__wrapper {
-    height: 480vh;
+    height: 525vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main__wrapper {
+    height: 540vh;
   }
 }
 
