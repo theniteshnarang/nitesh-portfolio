@@ -8,7 +8,7 @@
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 425px) {
   .main__wrapper {
     height: 220vh;
   }

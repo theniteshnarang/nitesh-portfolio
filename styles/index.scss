@@ -1,7 +1,6 @@
 // Fonts import
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import './mixin.scss';
-
 // Global styles
 * {
     margin: 0;
@@ -13,215 +12,204 @@
     text-decoration: none;
     scroll-behavior: smooth;
     text-align: center;
-  }
-  
-  body{
-      background-color: $lightColor;
-  }
-  
-  .button {
+}
+
+body {
+    background-color: $lightColor;
+}
+
+.button {
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     display: block;
     max-width: 9rem;
     margin: 1rem 0;
-  }
-  
-  .button-primary {
+}
+
+.button-primary {
     background-color: $primaryColor;
-    &:hover{
+    &:hover {
         color: $secondaryColor;
     }
-    &:focus{
-      color: $secondaryColor;
+    &:focus {
+        color: $secondaryColor;
     }
-  }
-  
-  .button-secondary {
+}
+
+.button-secondary {
     color: $primaryColor;
     border: 1px solid $primaryColor;
-    &:hover{
-      background-color: $secondaryColor;
+    &:hover {
+        background-color: $secondaryColor;
     }
-  }
+}
 
-.active{
-  font-weight: bold;
+.active {
+    font-weight: bold;
 }
 
 .navbar {
-  background-color: $primaryColor;
-  padding: 1rem;
-  border-bottom-left-radius: 1.5rem;
-
-  &__wrapper {
-    display: flex;
-    height: 8vh;
-    max-width: 70vw;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    @include tablet{
-      max-width: 95vw;
-      margin: 0 1rem;
-    }
-    @include phone{
-      height: 10vh;
-    }
-    @include smphone{
-      justify-content: center;
-    }
-    &__brandName {
-      color: $darkColor;
-      font-weight: bold;
-      transform: translateY(-20px);
-      @include phone{
-        font-size: 0.8rem;
-        transform: translate(0,-30px);
-      }
-      @include smphone{
-        transform: translate(30px,-35px);
-      }
-    }
-
-    &__container {
-      display: flex;
-      list-style-type: none;
-      transform: translateY(20px);
-      @include smphone{
-        transform: translate(-5px, 25px);
-      }
-      li {
-        margin: 0 2rem;
-        @include tablet{
-          margin: 0 1rem;
-        }
-
-        a {
-
-          color: $darkColor;
-          @include phone{
-            font-size: 0.8rem;
-          }
-          
-          &:hover {
-            color: $secondaryColor;
-          }
-        }
-      }
-    }
-  }
-}
-
-.hero {
-  &__wrapper {
-    padding: 4rem 0;
-    
-    img {
-      width: 35vw;
-      @include tablet{
-        width: 60vw;
-      }
-      @include smphone{
-        width: 80vw;
-      }
-    }
-
-    &__heading {
-      margin: 2rem 0;
-      font-size: 2rem;
-      color: $primaryColor;
-      @include phone{
-        font-size: 1.5rem;
-      }
-      strong {
-        font-size: 3rem;
-        color: $secondaryColor;
-        @include phone{
-          font-size: 2rem;
-        }
-      }
-    }
-  }
-}
-
-.main {
-  &__wrapper {
-    &__dark, &__light {
-      padding: 1.5rem 0;
-      height: 37vh;
-      @include smphone{
-        height: 40vh;
-      }
-
-      h3 {
-        font-size: 2rem;
-        margin: 0 0 1rem 0;
-      }
-      &__center {
-        max-width: 50vw;
-        margin: 0 auto;
-        p {
-          text-align: left;
-          padding: 0.5rem 0 0 0;
-        }
-
-        @include tablet{
-            max-width: 70vw;
-        }
-
-        @include phone{
-          max-width: 80vw;
-        }
-        @include smphone{ 
-          font-size: 0.8rem;
-        }
-      }
-    }
-    &__dark{
-        height: 35vh;
-        background-color: $darkColor;
-        @include tablet{
-          height: 40vh;
-        }
-        @include smphone{
-          height: 45vh;
-        }
-    }
-  }
-}
-
-.footer {
-  &__wrapper {
     background-color: $primaryColor;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h3{
-        color: $lightColor;
-        margin: 1rem 0;
-    }
-    &__list{
+    padding: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    &__wrapper {
         display: flex;
-        justify-content: center;
-        color: $darkColor;
-        @include smphone{
-          flex-direction: column;
+        height: 8vh;
+        max-width: 70vw;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet {
+            max-width: 95vw;
+            margin: 0 1rem;
         }
-        li{
-            margin: 0 2rem;
-            @include smphone{
-              margin: 0.5rem;
+        @include phone {
+            height: 10vh;
+        }
+        @include smphone {
+            justify-content: center;
+        }
+        &__brandName img {
+            transform: translateY(-10px);
+            @include phone {
+                width: 60px;
+                transform: translate(0, -20px);
             }
-            a{
-                color: $darkColor;
-                &:hover{
-                    color: $secondaryColor;
+            @include smphone {
+                transform: translate(0px, -25px);
+            }
+        }
+        &__container {
+            display: flex;
+            list-style-type: none;
+            transform: translateY(20px);
+            @include smphone {
+                transform: translate(-5px, 25px);
+            }
+            li {
+                margin: 0 2rem;
+                @include tablet {
+                    margin: 0 1rem;
+                }
+                a {
+                    color: $darkColor;
+                    @include phone {
+                        font-size: 0.8rem;
+                    }
+                    &:hover {
+                        color: $secondaryColor;
+                    }
                 }
             }
         }
     }
-  }
+}
+
+.hero {
+    &__wrapper {
+        padding: 4rem 0;
+        img {
+            width: 35vw;
+            @include tablet {
+                width: 60vw;
+            }
+            @include smphone {
+                width: 80vw;
+            }
+        }
+        &__heading {
+            margin: 2rem 0;
+            font-size: 2rem;
+            color: $primaryColor;
+            @include phone {
+                font-size: 1.5rem;
+            }
+            strong {
+                font-size: 3rem;
+                color: $secondaryColor;
+                @include phone {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    &__wrapper {
+        &__dark,
+        &__light {
+            padding: 1.5rem 0;
+            height: 37vh;
+            @include smphone {
+                height: 40vh;
+            }
+            h3 {
+                font-size: 2rem;
+                margin: 0 0 1rem 0;
+            }
+            &__center {
+                max-width: 50vw;
+                margin: 0 auto;
+                p {
+                    text-align: left;
+                    padding: 0.5rem 0 0 0;
+                }
+                @include tablet {
+                    max-width: 70vw;
+                }
+                @include phone {
+                    max-width: 80vw;
+                }
+                @include smphone {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        &__dark {
+            height: 35vh;
+            background-color: $darkColor;
+            @include tablet {
+                height: 40vh;
+            }
+            @include smphone {
+                height: 45vh;
+            }
+        }
+    }
+}
+
+.footer {
+    &__wrapper {
+        background-color: $primaryColor;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            color: $lightColor;
+            margin: 1rem 0;
+        }
+        &__list {
+            display: flex;
+            justify-content: center;
+            color: $darkColor;
+            @include smphone {
+                flex-direction: column;
+            }
+            li {
+                margin: 0 2rem;
+                @include smphone {
+                    margin: 0.5rem;
+                }
+                a {
+                    color: $darkColor;
+                    &:hover {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
 }
