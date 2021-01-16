@@ -17,24 +17,24 @@
 }
 
 .main__wrapper {
-  height: 485vh;
+  height: 600vh;
 }
 
 @media only screen and (max-width: 768px) {
   .main__wrapper {
-    height: 495vh;
+    height: 625vh;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .main__wrapper {
-    height: 525vh;
+    height: 690vh;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .main__wrapper {
-    height: 540vh;
+    height: 700vh;
   }
 }
 
@@ -68,7 +68,10 @@
   }
 }
 
-.main__wrapper__light__center h3, .main__wrapper__light__center span, .main__wrapper__light__center p, .main__wrapper__light__center a {
+.main__wrapper__light__center h3,
+.main__wrapper__light__center span,
+.main__wrapper__light__center p,
+.main__wrapper__light__center a {
   font-weight: normal;
 }
 

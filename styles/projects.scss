@@ -1,65 +1,62 @@
 @import './mixin.scss';
-
 .hero {
-  &__wrapper {
-    padding: 2rem 0 0 0;
-    @include tablet{
-      height: 10vh;
+    &__wrapper {
+        padding: 2rem 0 0 0;
+        @include tablet {
+            height: 10vh;
+        }
+        img {
+            display: none;
+        }
+        &__heading {
+            margin: 0;
+        }
     }
-    img{
-      display: none;
-    }
-    &__heading{
-      margin: 0;
-
-    }
-  }
 }
 
 .main {
-  &__wrapper {
-    height: 485vh;
-
-    @include tablet{
-      height: 495vh;
+    &__wrapper {
+        height: 600vh;
+        @include tablet {
+            height: 625vh;
+        }
+        @include smphone {
+            height: 690vh;
+        }
+        @include vsmphone {
+            height: 700vh;
+        }
+        &__light {
+            height: 25vh;
+            @include phone {
+                padding: 1rem 0;
+            }
+            &__center {
+                margin: 4rem auto;
+                font-weight: bold;
+                font-size: 2rem;
+                @include tablet {
+                    max-width: 80vw;
+                    margin: 4rem auto 4rem 4rem;
+                }
+                @include phone {
+                    max-width: 90vw;
+                    margin: 2rem 0.5rem 0 3rem;
+                }
+                h3,
+                span,
+                p,
+                a {
+                    font-weight: normal;
+                }
+                h3 {
+                    text-align: left;
+                }
+                span {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
     }
-
-    @include smphone{
-      height: 525vh;
-    }
-    @include vsmphone{
-      height: 540vh;
-    }
-
-    &__light {
-      height: 25vh;
-     
-      @include phone{
-        padding: 1rem 0;
-      }
-      &__center {
-        margin: 4rem auto;
-        font-weight: bold;
-        font-size: 2rem;
-        @include tablet{
-          max-width: 80vw;
-          margin: 4rem auto 4rem 4rem;
-        }
-        @include phone{
-          max-width: 90vw;
-          margin: 2rem 0.5rem 0 3rem;
-        }
-        h3, span, p, a{
-          font-weight: normal;
-        }
-        h3{
-          text-align: left;
-        }
-        span{
-          display: flex;
-          justify-content: flex-start;
-        }
-      }
-    }
-  }
 }
